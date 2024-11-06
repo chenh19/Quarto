@@ -1,2 +1,2 @@
 # Quarto
-A Quarto template
+A [Quarto](https://quarto.org/) template
