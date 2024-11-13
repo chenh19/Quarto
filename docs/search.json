@@ -21,11 +21,11 @@
     "text": "Miscellaneous"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "index.html#to-do",
+    "href": "index.html#to-do",
     "title": "Project",
-    "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "section": "To-do:",
+    "text": "To-do:\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "part-1.html",

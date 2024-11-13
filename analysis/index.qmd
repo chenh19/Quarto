@@ -1,8 +1,11 @@
 ---
 title: "Project"
+toc: false
 ---
 
 ![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/header.jpg)
+
+## To-do:
 
 This is a Quarto website.
 
