@@ -2,7 +2,7 @@
 title: "Project"
 ---
 
-![](../images/header.jpg)
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/header.jpg)
 
 This is a Quarto website.
 
