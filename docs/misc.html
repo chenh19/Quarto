@@ -176,9 +176,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">2. Install Quarto</a></li>
   <li><a href="#create-a-new-github-repository" id="toc-create-a-new-github-repository" class="nav-link" data-scroll-target="#create-a-new-github-repository">3. Create a new GitHub repository</a></li>
   <li><a href="#clone-this-quarto-template" id="toc-clone-this-quarto-template" class="nav-link" data-scroll-target="#clone-this-quarto-template">4. Clone this Quarto template</a></li>
-  <li><a href="#modify-it-as-you-like" id="toc-modify-it-as-you-like" class="nav-link" data-scroll-target="#modify-it-as-you-like">5. Modify it as you like</a></li>
+  <li><a href="#modify-it-as-you-like" id="toc-modify-it-as-you-like" class="nav-link" data-scroll-target="#modify-it-as-you-like">5. Modify it as you like</a>
+  <ul class="collapse">
   <li><a href="#push-your-website-to-your-github-repository" id="toc-push-your-website-to-your-github-repository" class="nav-link" data-scroll-target="#push-your-website-to-your-github-repository">6. Push your website to your GitHub repository</a></li>
   <li><a href="#enable-gibhub-pages-and-update-update-repository-details" id="toc-enable-gibhub-pages-and-update-update-repository-details" class="nav-link" data-scroll-target="#enable-gibhub-pages-and-update-update-repository-details">7. Enable GibHub pages and update update repository details</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -204,29 +206,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="setup-workspace" class="level3">
-<h3 class="anchored" data-anchor-id="setup-workspace">1. Setup workspace</h3>
+<section id="setup-workspace" class="level2">
+<h2 class="anchored" data-anchor-id="setup-workspace">1. Setup workspace</h2>
 <ul>
 <li><p>If you happen to use <a href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/">Debian Linux (KDE)</a>, which is my wife’s least hated linux distro, you may use “<a href="https://github.com/chenh19/MyWorkspace">MyWorkspace</a>” to configure the entire workspace:</p></li>
 <li><p>If you use other Unix/Linux systems, you may use “<a href="https://github.com/chenh19/git_ssh">git_ssh</a>” to connect to GitHub with SSH, and “<a href="https://github.com/chenh19/alt_rm">alt_rm</a>” to replace the default <code>rm</code> just in case.</p></li>
 </ul>
 </section>
-<section id="install-quarto" class="level3">
-<h3 class="anchored" data-anchor-id="install-quarto">2. Install Quarto</h3>
+<section id="install-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="install-quarto">2. Install Quarto</h2>
 <ul>
 <li><a href="https://quarto.org/docs/get-started/">Install Quarto, then check out the tutorials to learn the basics.</a></li>
 </ul>
 </section>
-<section id="create-a-new-github-repository" class="level3">
-<h3 class="anchored" data-anchor-id="create-a-new-github-repository">3. Create a new GitHub repository</h3>
+<section id="create-a-new-github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-github-repository">3. Create a new GitHub repository</h2>
 <ul>
-<li><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Creating a new GitHub repository from the web UI.</a></li>
+<li>Enter the repository name, keep default initializing settings, then click “Create repository”:</li>
 </ul>
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png" class="img-fluid"></p>
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ul>
+<li>After creating the repository, you will see the following:</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+<ul>
+<li>For more information: <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Creating a new GitHub repository from the web UI.</a></li>
+</ul>
 </section>
-<section id="clone-this-quarto-template" class="level3">
-<h3 class="anchored" data-anchor-id="clone-this-quarto-template">4. Clone this Quarto template</h3>
+<section id="clone-this-quarto-template" class="level2">
+<h2 class="anchored" data-anchor-id="clone-this-quarto-template">4. Clone this Quarto template</h2>
 <ul>
 <li>In a desired directory, clone the Quarto template repository:</li>
 </ul>
@@ -246,11 +262,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:<span class="op">&lt;</span>user<span class="op">&gt;</span>/<span class="op">&lt;</span>repository.git<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="modify-it-as-you-like" class="level3">
-<h3 class="anchored" data-anchor-id="modify-it-as-you-like">5. Modify it as you like</h3>
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png" class="img-fluid"></p>
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png" class="img-fluid"></p>
-</section>
+<section id="modify-it-as-you-like" class="level2">
+<h2 class="anchored" data-anchor-id="modify-it-as-you-like">5. Modify it as you like</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
 <section id="push-your-website-to-your-github-repository" class="level3">
 <h3 class="anchored" data-anchor-id="push-your-website-to-your-github-repository">6. Push your website to your GitHub repository</h3>
 <ul>
@@ -268,11 +291,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="enable-gibhub-pages-and-update-update-repository-details" class="level3">
 <h3 class="anchored" data-anchor-id="enable-gibhub-pages-and-update-update-repository-details">7. Enable GibHub pages and update update repository details</h3>
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3.png" class="img-fluid"></p>
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/4.png" class="img-fluid"></p>
-<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/4.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
+</figure>
+</div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

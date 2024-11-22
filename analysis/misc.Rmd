@@ -3,28 +3,32 @@ title: "Miscellaneous"
 output: html_document
 ---
 
-### 1. Setup workspace
+## 1. Setup workspace
 
 - If you happen to use [Debian Linux (KDE)](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), which is my wife's least hated linux distro, you may use "[MyWorkspace](https://github.com/chenh19/MyWorkspace)" to configure the entire workspace:
 
 - If you use other Unix/Linux systems, you may use "[git_ssh](https://github.com/chenh19/git_ssh)" to connect to GitHub with SSH, and "[alt_rm](https://github.com/chenh19/alt_rm)" to replace the default ```rm``` just in case.
 
 
-### 2. Install Quarto
+## 2. Install Quarto
 
 - [Install Quarto, then check out the tutorials to learn the basics.](https://quarto.org/docs/get-started/)
 
 
-### 3. Create a new GitHub repository
+## 3. Create a new GitHub repository
 
-- [Creating a new GitHub repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+- Enter the repository name, keep default initializing settings, then click "Create repository":  
+  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png){fig-align="center" width="70%"}  
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png)
+- After creating the repository, you will see the following:  
+  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png){fig-align="center" width="70%"}  
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png)
+- For more information: [Creating a new GitHub repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
 
-### 4. Clone this Quarto template
+## 4. Clone this Quarto template
 
 - In a desired directory, clone the Quarto template repository:
 
@@ -44,11 +48,11 @@ mv Quarto <Project> && cd <Project> && rm -rf .git && git init
 git remote add origin git@github.com:<user>/<repository.git>
 ```
 
-### 5. Modify it as you like
+## 5. Modify it as you like
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png)
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png){fig-align="center" width="80%"}
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png)
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png){fig-align="center" width="80%"}
 
 
 ### 6. Push your website to your GitHub repository
@@ -68,8 +72,8 @@ git add --all && git commit -a -m "update" && git push -u origin main
 
 ### 7. Enable GibHub pages and update update repository details
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3.png)
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3.png){fig-align="center" width="80%"}
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/4.png)
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/4.png){fig-align="center" width="80%"}
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5.png)
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5.png){fig-align="center" width="80%"}
