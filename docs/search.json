@@ -39,49 +39,7 @@
     "href": "misc.html",
     "title": "Miscellaneous",
     "section": "",
-    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\n\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nand use “alt_rm” to replace the default rm just in case:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
-  },
-  {
-    "objectID": "misc.html#setup-workspace",
-    "href": "misc.html#setup-workspace",
-    "title": "Miscellaneous",
-    "section": "",
-    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\n\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nand use “alt_rm” to replace the default rm just in case:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
-  },
-  {
-    "objectID": "misc.html#install-quarto",
-    "href": "misc.html#install-quarto",
-    "title": "Miscellaneous",
-    "section": "Install Quarto",
-    "text": "Install Quarto\n\nInstall Quarto, then check out the tutorials to learn the basics."
-  },
-  {
-    "objectID": "misc.html#create-a-new-github-repository",
-    "href": "misc.html#create-a-new-github-repository",
-    "title": "Miscellaneous",
-    "section": "Create a new GitHub repository",
-    "text": "Create a new GitHub repository\n\nCreating a new repository from the web UI."
-  },
-  {
-    "objectID": "misc.html#clone-the-quarto-template",
-    "href": "misc.html#clone-the-quarto-template",
-    "title": "Miscellaneous",
-    "section": "Clone the Quarto template",
-    "text": "Clone the Quarto template\n\nIn a desired directory, clone the Quarto template repository:\n\n\ngit clone https://github.com/chenh19/Quarto.git\n\n\nRename the repository as you like:\n\n\nmv Quarto &lt;Project&gt; && cd &lt;Project&gt; && rm -rf .git && git init\n\n\nConnect this local repository with your GitHub:\n\n\ngit remote add origin git@github.com:&lt;user&gt;/&lt;repository.git&gt;\n\n\nRender the modified .Rmd/.qmd/.ipynb files:"
-  },
-  {
-    "objectID": "misc.html#push-your-website-to-your-github-repository",
-    "href": "misc.html#push-your-website-to-your-github-repository",
-    "title": "Miscellaneous",
-    "section": "Push your website to your GitHub repository",
-    "text": "Push your website to your GitHub repository\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
-  },
-  {
-    "objectID": "misc.html#enable-gibhub-pages-and-update-update-repository-details",
-    "href": "misc.html#enable-gibhub-pages-and-update-update-repository-details",
-    "title": "Miscellaneous",
-    "section": "Enable GibHub pages and update update repository details",
-    "text": "Enable GibHub pages and update update repository details"
+    "text": "1. Setup workspace\n\nIf you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH, and “alt_rm” to replace the default rm just in case.\n\n\n\n2. Install Quarto\n\nInstall Quarto, then check out the tutorials to learn the basics.\n\n\n\n3. Create a new GitHub repository\n\nCreating a new GitHub repository from the web UI.\n\n\n\n4. Clone this Quarto template\n\nIn a desired directory, clone the Quarto template repository:\n\n\ngit clone https://github.com/chenh19/Quarto.git\n\n\nRename the repository as you like (replace the “&lt;Project&gt;” with your project name):\n\n\nmv Quarto &lt;Project&gt; && cd &lt;Project&gt; && rm -rf .git && git init\n\n\nConnect this local repository with your GitHub remote repository (replace the “&lt;user&gt;/&lt;repository.git&gt;” with your GitHub link):\n\n\ngit remote add origin git@github.com:&lt;user&gt;/&lt;repository.git&gt;\n\n\n\n5. Modify it as you like\n\n\n6. Push your website to your GitHub repository\n\nRender the modified .Rmd/.qmd/.ipynb files:\n\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main\n\n\n\n7. Enable GibHub pages and update update repository details"
   },
   {
     "objectID": "part-2.html",

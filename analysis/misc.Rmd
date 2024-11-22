@@ -3,36 +3,24 @@ title: "Miscellaneous"
 output: html_document
 ---
 
-## Setup workspace
+### 1. Setup workspace
 
-- If you happen to use [Debian Linux (KDE)](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), which is my wife's least hated linux distro, you may use "[**MyWorkspace**](https://github.com/chenh19/MyWorkspace)" to configure the entire workspace:
+- If you happen to use [Debian Linux (KDE)](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), which is my wife's least hated linux distro, you may use "[MyWorkspace](https://github.com/chenh19/MyWorkspace)" to configure the entire workspace:
 
-```{bash, eval=FALSE}
-bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)
-```
+- If you use other Unix/Linux systems, you may use "[git_ssh](https://github.com/chenh19/git_ssh)" to connect to GitHub with SSH, and "[alt_rm](https://github.com/chenh19/alt_rm)" to replace the default ```rm``` just in case.
 
-- If you use other Unix/Linux systems, you may use "[**git_ssh**](https://github.com/chenh19/git_ssh)" to connect to GitHub with SSH:
 
-```{bash, eval=FALSE}
-bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)
-```
-
--  and use "[**alt_rm**](https://github.com/chenh19/alt_rm)" to replace the default ```rm``` just in case:
-
-```{bash, eval=FALSE}
-bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)
-```
-
-## Install Quarto
+### 2. Install Quarto
 
 - [Install Quarto, then check out the tutorials to learn the basics.](https://quarto.org/docs/get-started/)
 
-## Create a new GitHub repository
 
-- [Creating a new repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+### 3. Create a new GitHub repository
+
+- [Creating a new GitHub repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
 
-## Clone the Quarto template
+### 4. Clone this Quarto template
 
 - In a desired directory, clone the Quarto template repository:
 
@@ -40,21 +28,26 @@ bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.
 git clone https://github.com/chenh19/Quarto.git
 ```
 
-- Rename the repository as you like:
+- Rename the repository as you like (replace the "```<Project>```" with your project name):
 
 ```{bash, eval=FALSE}
 mv Quarto <Project> && cd <Project> && rm -rf .git && git init
 ```
 
-- Connect this local repository with your GitHub:
+- Connect this local repository with your GitHub remote repository (replace the "```<user>/<repository.git>```" with your GitHub link):
 
 ```{bash, eval=FALSE}
 git remote add origin git@github.com:<user>/<repository.git>
 ```
 
-- Render the modified ```.Rmd/.qmd/.ipynb``` files:
+### 5. Modify it as you like
 
-## Push your website to your GitHub repository
+
+
+
+### 6. Push your website to your GitHub repository
+
+- Render the modified ```.Rmd/.qmd/.ipynb``` files:
 
 ```{bash, eval=FALSE}
 quarto render analysis
@@ -66,4 +59,5 @@ quarto render analysis
 git add --all && git commit -a -m "update" && git push -u origin main
 ```
 
-## Enable GibHub pages and update update repository details
+
+### 7. Enable GibHub pages and update update repository details
