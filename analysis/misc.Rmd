@@ -69,7 +69,7 @@ quarto render analysis
 - For more information: [Quarto Guide: Creating a Website](https://quarto.org/docs/websites/).  
 
 
-### 6. Upload the website to your GitHub repository
+## 6. Upload the website to your GitHub repository
 
 - Add, commit, and push to your GitHub:
 
@@ -78,7 +78,7 @@ git add --all && git commit -a -m "update" && git push -u origin main
 ```
 
 
-### 7. Enable GibHub Pages and edit repository details
+## 7. Enable GibHub Pages and edit repository details
 
 - Go to the "**Settings**" tab on your repository, go to "**Pages**" and in the "**Branch**" setting, select "**main**" and "**/docs**", then click "**Save**":  
   

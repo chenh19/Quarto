@@ -74,7 +74,21 @@
     "href": "misc.html#modify-it-as-you-like",
     "title": "Tutorial",
     "section": "5. Modify it as you like",
-    "text": "5. Modify it as you like\n\nModify the _quarto.yml file for your website:\n\n\n\n\n\n\n\nMake your .Rmd/.qmd/.ipynb notes:\n\n\n\n\n\n\n\nRender the new .Rmd/.qmd/.ipynb notes:\n\n\nquarto render analysis\n\n\nYou may check the html files in the ./docs folder to see if everything looks good.\nFor more information: Quarto Guide: Creating a Website.\n\n\n6. Upload the website to your GitHub repository\n\nAdd, commit, and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main\n\n\n\n7. Enable GibHub Pages and edit repository details\n\nGo to the “Settings” tab on your repository, go to “Pages” and in the “Branch” setting, select “main” and “/docs”, then click “Save”:\n\n\n\n\n\n\n\nOn your repository page, click the gear in the top right:\n\n\n\n\n\n\n\nEnter the website link for your convenience (the default link is https://&lt;user&gt;.github.io/&lt;repository&gt;/), and click “Save changes”:"
+    "text": "5. Modify it as you like\n\nModify the _quarto.yml file for your website:\n\n\n\n\n\n\n\nMake your .Rmd/.qmd/.ipynb notes:\n\n\n\n\n\n\n\nRender the new .Rmd/.qmd/.ipynb notes:\n\n\nquarto render analysis\n\n\nYou may check the html files in the ./docs folder to see if everything looks good.\nFor more information: Quarto Guide: Creating a Website."
+  },
+  {
+    "objectID": "misc.html#upload-the-website-to-your-github-repository",
+    "href": "misc.html#upload-the-website-to-your-github-repository",
+    "title": "Tutorial",
+    "section": "6. Upload the website to your GitHub repository",
+    "text": "6. Upload the website to your GitHub repository\n\nAdd, commit, and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
+  },
+  {
+    "objectID": "misc.html#enable-gibhub-pages-and-edit-repository-details",
+    "href": "misc.html#enable-gibhub-pages-and-edit-repository-details",
+    "title": "Tutorial",
+    "section": "7. Enable GibHub Pages and edit repository details",
+    "text": "7. Enable GibHub Pages and edit repository details\n\nGo to the “Settings” tab on your repository, go to “Pages” and in the “Branch” setting, select “main” and “/docs”, then click “Save”:\n\n\n\n\n\n\n\nOn your repository page, click the gear in the top right:\n\n\n\n\n\n\n\nEnter the website link for your convenience (the default link is https://&lt;user&gt;.github.io/&lt;repository&gt;/), and click “Save changes”:"
   },
   {
     "objectID": "misc.html#done",
