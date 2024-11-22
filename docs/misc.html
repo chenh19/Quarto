@@ -172,8 +172,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#configuration" id="toc-configuration" class="nav-link active" data-scroll-target="#configuration">Configuration</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#setup-workspace" id="toc-setup-workspace" class="nav-link active" data-scroll-target="#setup-workspace">Setup workspace</a></li>
+  <li><a href="#install-quarto" id="toc-install-quarto" class="nav-link" data-scroll-target="#install-quarto">Install Quarto</a></li>
+  <li><a href="#create-a-new-github-repository" id="toc-create-a-new-github-repository" class="nav-link" data-scroll-target="#create-a-new-github-repository">Create a new GitHub repository</a></li>
+  <li><a href="#clone-the-quarto-template" id="toc-clone-the-quarto-template" class="nav-link" data-scroll-target="#clone-the-quarto-template">Clone the Quarto template</a></li>
   </ul>
 </nav>
     </div>
@@ -199,28 +201,71 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="configuration" class="level2">
-<h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
-<p>If you happen to use Debian Linux (KDE), which is my wife’s least disliked Linux distro, you may use the command below to configure the entire workspace:</p>
+<section id="setup-workspace" class="level2">
+<h2 class="anchored" data-anchor-id="setup-workspace">Setup workspace</h2>
+<ul>
+<li>If you happen to use <a href="https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/">Debian Linux (KDE)</a>, which is my wife’s least hated linux distro, you may use “<a href="https://github.com/chenh19/MyWorkspace"><strong>MyWorkspace</strong></a>” to configure the entire workspace:</li>
+</ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> <span class="op">&lt;(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>If you use other Unix/Linux systems, you may use the commands below to configure your system:</p>
 <ul>
-<li>Connecting to GitHub with SSH:</li>
+<li>If you use other Unix/Linux systems, you may use “<a href="https://github.com/chenh19/git_ssh"><strong>git_ssh</strong></a>” to connect to GitHub with SSH:</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> <span class="op">&lt;(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ul>
-<li>Setting up alternative <code>rm</code> command:</li>
+<li>and use “<a href="https://github.com/chenh19/alt_rm"><strong>alt_rm</strong></a>” to replace the default <code>rm</code> just in case:</li>
 </ul>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bash</span> <span class="op">&lt;(</span><span class="ex">curl</span> <span class="at">-fsSL</span> https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh<span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+<section id="install-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="install-quarto">Install Quarto</h2>
+<ul>
+<li><a href="https://quarto.org/docs/get-started/">Install Quarto, then check out the tutorials to learn the basics.</a></li>
+</ul>
+</section>
+<section id="create-a-new-github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-github-repository">Create a new GitHub repository</h2>
+<ul>
+<li><a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository">Creating a new repository from the web UI.</a></li>
+</ul>
+</section>
+<section id="clone-the-quarto-template" class="level2">
+<h2 class="anchored" data-anchor-id="clone-the-quarto-template">Clone the Quarto template</h2>
+<ul>
+<li>In a desired directory, clone the Quarto template repository:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/chenh19/Quarto.git</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Rename the repository as you like:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mv</span> Quarto <span class="op">&lt;</span>Project<span class="op">&gt;</span> <span class="kw">&amp;&amp;</span> <span class="bu">cd</span> <span class="op">&lt;</span>Project<span class="op">&gt;</span> <span class="kw">&amp;&amp;</span> <span class="fu">rm</span> <span class="at">-rf</span> .git %% git init</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Connect this local repository with your GitHub:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin git@github.com:<span class="op">&lt;</span>user<span class="op">&gt;</span>/<span class="op">&lt;</span>repository.git<span class="op">&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Render the modified <code>.Rmd/.qmd/.ipynb</code> files:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> render analysis</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Commit and push to your GitHub:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add <span class="at">--all</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> commit <span class="at">-a</span> <span class="at">-m</span> <span class="st">"update"</span> <span class="kw">&amp;&amp;</span> <span class="fu">git</span> push <span class="at">-u</span> origin main</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 
 
 </section>

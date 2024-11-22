@@ -39,14 +39,35 @@
     "href": "misc.html",
     "title": "Miscellaneous",
     "section": "",
-    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least disliked Linux distro, you may use the command below to configure the entire workspace:\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\nIf you use other Unix/Linux systems, you may use the commands below to configure your system:\n\nConnecting to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nSetting up alternative rm command:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
+    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\n\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nand use “alt_rm” to replace the default rm just in case:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
   },
   {
-    "objectID": "misc.html#configuration",
-    "href": "misc.html#configuration",
+    "objectID": "misc.html#setup-workspace",
+    "href": "misc.html#setup-workspace",
     "title": "Miscellaneous",
     "section": "",
-    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least disliked Linux distro, you may use the command below to configure the entire workspace:\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\nIf you use other Unix/Linux systems, you may use the commands below to configure your system:\n\nConnecting to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nSetting up alternative rm command:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
+    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\n\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nand use “alt_rm” to replace the default rm just in case:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
+  },
+  {
+    "objectID": "misc.html#install-quarto",
+    "href": "misc.html#install-quarto",
+    "title": "Miscellaneous",
+    "section": "Install Quarto",
+    "text": "Install Quarto\n\nInstall Quarto, then check out the tutorials to learn the basics."
+  },
+  {
+    "objectID": "misc.html#create-a-new-github-repository",
+    "href": "misc.html#create-a-new-github-repository",
+    "title": "Miscellaneous",
+    "section": "Create a new GitHub repository",
+    "text": "Create a new GitHub repository\n\nCreating a new repository from the web UI."
+  },
+  {
+    "objectID": "misc.html#clone-the-quarto-template",
+    "href": "misc.html#clone-the-quarto-template",
+    "title": "Miscellaneous",
+    "section": "Clone the Quarto template",
+    "text": "Clone the Quarto template\n\nIn a desired directory, clone the Quarto template repository:\n\n\ngit clone https://github.com/chenh19/Quarto.git\n\n\nRename the repository as you like:\n\n\nmv Quarto &lt;Project&gt; && cd &lt;Project&gt; && rm -rf .git %% git init\n\n\nConnect this local repository with your GitHub:\n\n\ngit remote add origin git@github.com:&lt;user&gt;/&lt;repository.git&gt;\n\n\nRender the modified .Rmd/.qmd/.ipynb files:\n\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
   },
   {
     "objectID": "part-2.html",
