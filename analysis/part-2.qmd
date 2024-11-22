@@ -1,7 +1,6 @@
 ---
-title: "HTML rendered from Quarto's [hello.qmd](https://quarto.org/docs/get-started/hello/rstudio.html)"
+title: "Part-2: ```html``` rendered from ```.qmd``` files"
 format: html
-editor: visual
 ---
 
 ```{r}
@@ -12,13 +11,11 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-## Meet Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+This example was created from a ```.qmd``` file using [**Quarto**](https://quarto.org/).
 
 ## Meet the penguins
 
-![](https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png){style="float:right;" fig-alt="Illustration of three species of Palmer Archipelago penguins: Chinstrap, Gentoo, and Adelie. Artwork by @allison_horst." width="401"}
+<!-- ![](https://raw.githubusercontent.com/quarto-dev/quarto-web/main/docs/get-started/hello/rstudio/lter_penguins.png){fig-alt="Illustration of three species of Palmer Archipelago penguins: Chinstrap, Gentoo, and Adelie. Artwork by @allison_horst." fig-align="center" width="80%"} -->
 
 The `penguins` data from the [**palmerpenguins**](https://allisonhorst.github.io/palmerpenguins "palmerpenguins R package") package contains size measurements for `{r} nrow(penguins)` penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.
 
@@ -27,7 +24,7 @@ The plot below shows the relationship between flipper and bill lengths of these 
 ```{r}
 #| label: plot-penguins
 #| warning: false
-#| echo: false
+#| fig-align: center
 
 ggplot(penguins, 
        aes(x = flipper_length_mm, y = bill_length_mm)) +

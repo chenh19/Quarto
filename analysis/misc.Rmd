@@ -1,0 +1,27 @@
+---
+title: "Miscellaneous"
+output: html_document
+---
+
+## Configuration
+
+If you happen to use Debian Linux (KDE), which is my wife's least disliked Linux distro, you may use the command below to configure the entire workspace:
+
+```{bash, eval=FALSE}
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)
+```
+
+If you use other Unix/Linux systems, you may use the commands below to configure your system:
+
+- Connecting to GitHub with SSH:
+
+```{bash, eval=FALSE}
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)
+```
+
+- Setting up alternative ```rm``` command:
+```{bash, eval=FALSE}
+bash <(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)
+```
+
+## 

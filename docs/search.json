@@ -1,51 +1,65 @@
 [
   {
-    "objectID": "part-2.html",
-    "href": "part-2.html",
-    "title": "HTML rendered from Quarto’s hellp.ipynb",
+    "objectID": "part-3.html",
+    "href": "part-3.html",
+    "title": "Part-3: html rendered from .ipynb files",
     "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
+    "text": "This example was created from a .ipynb file using Quarto."
   },
   {
-    "objectID": "part-2.html#polar-axis",
-    "href": "part-2.html#polar-axis",
-    "title": "HTML rendered from Quarto’s hellp.ipynb",
-    "section": "",
-    "text": "For a demonstration of a line plot on a polar axis, see Figure 1.\n\n\nCode\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
-  },
-  {
-    "objectID": "misc.html",
-    "href": "misc.html",
-    "title": "Misc",
-    "section": "",
-    "text": "Miscellaneous"
-  },
-  {
-    "objectID": "index.html#to-do",
-    "href": "index.html#to-do",
-    "title": "Project",
-    "section": "To-do:",
-    "text": "To-do:\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "objectID": "part-3.html#polar-axis",
+    "href": "part-3.html#polar-axis",
+    "title": "Part-3: html rendered from .ipynb files",
+    "section": "Polar Axis",
+    "text": "Polar Axis\nFor a demonstration of a line plot on a polar axis, see Figure 1.\n\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(\n  subplot_kw = {'projection': 'polar'} \n)\nax.plot(theta, r)\nax.set_rticks([0.5, 1, 1.5, 2])\nax.grid(True)\nplt.show()\n\n\n\n\n\n\n\nFigure 1: A line plot on a polar axis"
   },
   {
     "objectID": "part-1.html",
     "href": "part-1.html",
-    "title": "HTML rendered from Quarto’s hello.qmd",
+    "title": "HTML rendered from .Rmd",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "This example was created from a .Rmd file using Quarto."
   },
   {
-    "objectID": "part-1.html#meet-quarto",
-    "href": "part-1.html#meet-quarto",
-    "title": "HTML rendered from Quarto’s hello.qmd",
-    "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "objectID": "part-1.html#population-structure",
+    "href": "part-1.html#population-structure",
+    "title": "HTML rendered from .Rmd",
+    "section": "Population structure",
+    "text": "Population structure\nCalculate principal components using chromosome 22. Plot PC1 vs PC2 using different color for each population. Keep only CEU, YRI, ASW, and CHB before plotting.\n\nsystem(glue::glue(\"/bin/plink/plink --bfile ./hapmap3_ch22 --pca --out ./pca\"))\npcplink = read.table(\n  glue::glue(\"./pca.eigenvec\"),\n  header=F, as.is=T)\nnames(pcplink) = c(\"FID\",\"IID\",paste0(\"PC\", c(1:(ncol(pcplink)-2))))\npcplink = popinfo %&gt;% \n  inner_join(pcplink, by=c(\"FID\"=\"FID\", \"IID\"=\"IID\"))\npcplink %&gt;% \n  filter(population ==\"CEU\"|population==\"YRI\"|population==\"ASW\"|population==\"CHB\") %&gt;%\n  ggplot(aes(PC1,PC2,col=population)) + \n  geom_point(size=3,alpha=.7) + \n  theme_bw(base_size = 15)"
   },
   {
-    "objectID": "part-1.html#meet-the-penguins",
-    "href": "part-1.html#meet-the-penguins",
-    "title": "HTML rendered from Quarto’s hello.qmd",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Project",
+    "section": "",
+    "text": "To-do:\n\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "misc.html",
+    "href": "misc.html",
+    "title": "Miscellaneous",
+    "section": "",
+    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least disliked Linux distro, you may use the command below to configure the entire workspace:\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\nIf you use other Unix/Linux systems, you may use the commands below to configure your system:\n\nConnecting to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nSetting up alternative rm command:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
+  },
+  {
+    "objectID": "misc.html#configuration",
+    "href": "misc.html#configuration",
+    "title": "Miscellaneous",
+    "section": "",
+    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least disliked Linux distro, you may use the command below to configure the entire workspace:\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/MyWorkspace/main/setup.sh)\n\nIf you use other Unix/Linux systems, you may use the commands below to configure your system:\n\nConnecting to GitHub with SSH:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/git_ssh/main/gitssh.sh)\n\n\nSetting up alternative rm command:\n\n\nbash &lt;(curl -fsSL https://raw.githubusercontent.com/chenh19/alt_rm/main/install.sh)"
+  },
+  {
+    "objectID": "part-2.html",
+    "href": "part-2.html",
+    "title": "Part-2: html rendered from .qmd files",
+    "section": "",
+    "text": "This example was created from a .qmd file using Quarto."
+  },
+  {
+    "objectID": "part-2.html#meet-the-penguins",
+    "href": "part-2.html#meet-the-penguins",
+    "title": "Part-2: html rendered from .qmd files",
     "section": "Meet the penguins",
-    "text": "Meet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.\nThe plot below shows the relationship between flipper and bill lengths of these penguins."
+    "text": "Meet the penguins\n\nThe penguins data from the palmerpenguins package contains size measurements for 344 penguins from three species observed on three islands in the Palmer Archipelago, Antarctica.\nThe plot below shows the relationship between flipper and bill lengths of these penguins.\n\nggplot(penguins, \n       aes(x = flipper_length_mm, y = bill_length_mm)) +\n  geom_point(aes(color = species, shape = species)) +\n  scale_color_manual(values = c(\"darkorange\",\"purple\",\"cyan4\")) +\n  labs(\n    title = \"Flipper and bill length\",\n    subtitle = \"Dimensions for penguins at Palmer Station LTER\",\n    x = \"Flipper length (mm)\", y = \"Bill length (mm)\",\n    color = \"Penguin species\", shape = \"Penguin species\"\n  ) +\n  theme_minimal()"
   }
 ]

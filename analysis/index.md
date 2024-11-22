@@ -5,8 +5,6 @@ toc: false
 
 ![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/header.jpg)
 
-## To-do:
+### To-do:
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+- [ ] To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
