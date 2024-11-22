@@ -25,7 +25,7 @@
     "href": "part-1.html#population-structure",
     "title": "HTML rendered from .Rmd",
     "section": "Population structure",
-    "text": "Population structure\nCalculate principal components using chromosome 22. Plot PC1 vs PC2 using different color for each population. Keep only CEU, YRI, ASW, and CHB before plotting.\n\nsystem(glue::glue(\"/bin/plink/plink --bfile ./hapmap3_ch22 --pca --out ./pca\"))\npcplink = read.table(\n  glue::glue(\"./pca.eigenvec\"),\n  header=F, as.is=T)\nnames(pcplink) = c(\"FID\",\"IID\",paste0(\"PC\", c(1:(ncol(pcplink)-2))))\npcplink = popinfo %&gt;% \n  inner_join(pcplink, by=c(\"FID\"=\"FID\", \"IID\"=\"IID\"))\npcplink %&gt;% \n  filter(population ==\"CEU\"|population==\"YRI\"|population==\"ASW\"|population==\"CHB\") %&gt;%\n  ggplot(aes(PC1,PC2,col=population)) + \n  geom_point(size=3,alpha=.7) + \n  theme_bw(base_size = 15)"
+    "text": "Population structure\nCalculate principal components using chromosome 22. Plot PC1 vs PC2 using different color for each population. Keep only CEU, YRI, ASW, and CHB before plotting.\n\nsystem(glue::glue(\"/bin/plink/plink --bfile ./hapmap3_ch22 --pca --out ./pca\"))\npcplink = read.table(glue::glue(\"./pca.eigenvec\"),header=F, as.is=T)\nnames(pcplink) = c(\"FID\",\"IID\",paste0(\"PC\", c(1:(ncol(pcplink)-2))))\npcplink = popinfo %&gt;% inner_join(pcplink, by=c(\"FID\"=\"FID\", \"IID\"=\"IID\"))\npcplink %&gt;% \n  filter(population ==\"CEU\"|population==\"YRI\"|population==\"ASW\"|population==\"CHB\") %&gt;%\n  ggplot(aes(PC1,PC2,col=population)) + \n  geom_point(size=3,alpha=.7) + \n  theme_bw(base_size = 15)"
   },
   {
     "objectID": "index.html",

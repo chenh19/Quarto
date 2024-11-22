@@ -11,12 +11,9 @@ Calculate principal components using chromosome 22. Plot PC1 vs PC2 using differ
 
 ```{r,eval=FALSE}
 system(glue::glue("/bin/plink/plink --bfile ./hapmap3_ch22 --pca --out ./pca"))
-pcplink = read.table(
-  glue::glue("./pca.eigenvec"),
-  header=F, as.is=T)
+pcplink = read.table(glue::glue("./pca.eigenvec"),header=F, as.is=T)
 names(pcplink) = c("FID","IID",paste0("PC", c(1:(ncol(pcplink)-2))))
-pcplink = popinfo %>% 
-  inner_join(pcplink, by=c("FID"="FID", "IID"="IID"))
+pcplink = popinfo %>% inner_join(pcplink, by=c("FID"="FID", "IID"="IID"))
 pcplink %>% 
   filter(population =="CEU"|population=="YRI"|population=="ASW"|population=="CHB") %>%
   ggplot(aes(PC1,PC2,col=population)) + 
