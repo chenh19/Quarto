@@ -1,13 +1,13 @@
 ---
-title: "Miscellaneous"
+title: "Tutorial"
 output: html_document
 ---
 
 ## 1. Setup workspace
 
-- If you happen to use [Debian Linux (KDE)](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), which is my wife's least hated linux distro, you may use "[MyWorkspace](https://github.com/chenh19/MyWorkspace)" to configure the entire workspace:
+- If you happen to use [**Debian Linux (KDE)**](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), which is my wife's least hated linux distro, you may use "[**MyWorkspace**](https://github.com/chenh19/MyWorkspace)" to configure the entire workspace:
 
-- If you use other Unix/Linux systems, you may use "[git_ssh](https://github.com/chenh19/git_ssh)" to connect to GitHub with SSH, and "[alt_rm](https://github.com/chenh19/alt_rm)" to replace the default ```rm``` just in case.
+- If you use other Unix/Linux systems, you may use "[**git_ssh**](https://github.com/chenh19/git_ssh)" to connect to GitHub with SSH, and "[**alt_rm**](https://github.com/chenh19/alt_rm)" to replace the default ```rm``` just in case.
 
 
 ## 2. Install Quarto
@@ -17,18 +17,18 @@ output: html_document
 
 ## 3. Create a new GitHub repository
 
-- Enter the repository name, keep default initializing settings, then click "Create repository":  
+- Enter the **repository name**, keep the **default initializing settings**, then click "**Create repository**":  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3-1.png){fig-align="center" width="75%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3-1.png){fig-align="center" width="80%"}  
 
-- After creating the repository, you will see the following (copy the SSH link, you will need it in the next step):  
+- After creating the repository, you will see the following (copy the **SSH link**, you will need it in the next step):  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3-2.png){fig-align="center" width="75%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3-2.png){fig-align="center" width="78%"}  
 
-- For more information: [Creating a new GitHub repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+- For more information: [Creating a new GitHub repository from the web UI](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
 
 
-## 4. Clone this Quarto template
+## 4. Download the Quarto template
 
 - In a desired directory, clone the Quarto template repository:
 
@@ -42,7 +42,7 @@ git clone https://github.com/chenh19/Quarto.git
 mv Quarto <Project> && cd <Project> && rm -rf .git && git init
 ```
 
-- Connect this local repository with your GitHub remote repository (replace the "```<user>/<repository.git>```" with your GitHub link):
+- Connect this local repository with your GitHub remote repository (replace the "```<user>/<repository.git>```" with your SSH link):
 
 ```{bash, eval=FALSE}
 git remote add origin git@github.com:<user>/<repository.git>
@@ -50,34 +50,48 @@ git remote add origin git@github.com:<user>/<repository.git>
 
 ## 5. Modify it as you like
 
-- Modify the ```.yml``` file for your website:  
+- Modify the ```_quarto.yml``` file for your website:  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5-1.png){fig-align="center" width="75%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5-1.png){fig-align="center" width="90%"}  
 
-- Modify your ```.Rmd/.qmd/.ipynb``` notes:
+- Make your ```.Rmd/.qmd/.ipynb``` notes:  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5-2.png){fig-align="center" width="85%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5-2.png){fig-align="center" width="90%"}  
 
-
-### 6. Push your website to your GitHub repository
-
-- Render the modified ```.Rmd/.qmd/.ipynb``` files:
-
+- Render the new ```.Rmd/.qmd/.ipynb``` notes:  
+  
 ```{bash, eval=FALSE}
 quarto render analysis
 ```
 
-- Commit and push to your GitHub:
+- You may check the html files in the ```./docs``` folder to see if everything looks good.   
+  
+- For more information: [Quarto Guide: Creating a Website](https://quarto.org/docs/websites/).  
+
+
+### 6. Upload the website to your GitHub repository
+
+- Add, commit, and push to your GitHub:
 
 ```{bash, eval=FALSE}
 git add --all && git commit -a -m "update" && git push -u origin main
 ```
 
 
-### 7. Enable GibHub pages and update update repository details
+### 7. Enable GibHub Pages and edit repository details
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-1.png){fig-align="center" width="80%"}
+- Go to the "**Settings**" tab on your repository, go to "**Pages**" and in the "**Branch**" setting, select "**main**" and "**/docs**", then click "**Save**":  
+  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-1.png){fig-align="center" width="80%"}  
+  
+- On your repository page, click the gear in the top right:  
+  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-2.png){fig-align="center" width="80%"}  
+  
+- Enter the website link for your convenience (the default link is ```<user>.github.io/<repository>```), and click "**Save changes**":  
+  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-3.png){fig-align="center" width="80%"}  
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-2.png){fig-align="center" width="80%"}
+## 8. Done!
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-3.png){fig-align="center" width="80%"}
+- Congratulations, you have made a website!

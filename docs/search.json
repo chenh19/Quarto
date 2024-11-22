@@ -37,44 +37,51 @@
   {
     "objectID": "misc.html",
     "href": "misc.html",
-    "title": "Miscellaneous",
+    "title": "Tutorial",
     "section": "",
     "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH, and “alt_rm” to replace the default rm just in case."
   },
   {
     "objectID": "misc.html#setup-workspace",
     "href": "misc.html#setup-workspace",
-    "title": "Miscellaneous",
+    "title": "Tutorial",
     "section": "",
     "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH, and “alt_rm” to replace the default rm just in case."
   },
   {
     "objectID": "misc.html#install-quarto",
     "href": "misc.html#install-quarto",
-    "title": "Miscellaneous",
+    "title": "Tutorial",
     "section": "2. Install Quarto",
     "text": "2. Install Quarto\n\nInstall Quarto, then check out the tutorials to learn the basics."
   },
   {
     "objectID": "misc.html#create-a-new-github-repository",
     "href": "misc.html#create-a-new-github-repository",
-    "title": "Miscellaneous",
+    "title": "Tutorial",
     "section": "3. Create a new GitHub repository",
-    "text": "3. Create a new GitHub repository\n\nEnter the repository name, keep default initializing settings, then click “Create repository”:\n\n\n\n\n\n\n\nAfter creating the repository, you will see the following (copy the SSH link, you will need it in the next step):\n\n\n\n\n\n\n\nFor more information: Creating a new GitHub repository from the web UI."
+    "text": "3. Create a new GitHub repository\n\nEnter the repository name, keep the default initializing settings, then click “Create repository”:\n\n\n\n\n\n\n\nAfter creating the repository, you will see the following (copy the SSH link, you will need it in the next step):\n\n\n\n\n\n\n\nFor more information: Creating a new GitHub repository from the web UI."
   },
   {
-    "objectID": "misc.html#clone-this-quarto-template",
-    "href": "misc.html#clone-this-quarto-template",
-    "title": "Miscellaneous",
-    "section": "4. Clone this Quarto template",
-    "text": "4. Clone this Quarto template\n\nIn a desired directory, clone the Quarto template repository:\n\n\ngit clone https://github.com/chenh19/Quarto.git\n\n\nRename the repository as you like (replace the “&lt;Project&gt;” with your project name):\n\n\nmv Quarto &lt;Project&gt; && cd &lt;Project&gt; && rm -rf .git && git init\n\n\nConnect this local repository with your GitHub remote repository (replace the “&lt;user&gt;/&lt;repository.git&gt;” with your GitHub link):\n\n\ngit remote add origin git@github.com:&lt;user&gt;/&lt;repository.git&gt;"
+    "objectID": "misc.html#download-the-quarto-template",
+    "href": "misc.html#download-the-quarto-template",
+    "title": "Tutorial",
+    "section": "4. Download the Quarto template",
+    "text": "4. Download the Quarto template\n\nIn a desired directory, clone the Quarto template repository:\n\n\ngit clone https://github.com/chenh19/Quarto.git\n\n\nRename the repository as you like (replace the “&lt;Project&gt;” with your project name):\n\n\nmv Quarto &lt;Project&gt; && cd &lt;Project&gt; && rm -rf .git && git init\n\n\nConnect this local repository with your GitHub remote repository (replace the “&lt;user&gt;/&lt;repository.git&gt;” with your SSH link):\n\n\ngit remote add origin git@github.com:&lt;user&gt;/&lt;repository.git&gt;"
   },
   {
     "objectID": "misc.html#modify-it-as-you-like",
     "href": "misc.html#modify-it-as-you-like",
-    "title": "Miscellaneous",
+    "title": "Tutorial",
     "section": "5. Modify it as you like",
-    "text": "5. Modify it as you like\n\nModify the .yml file for your website:\n\n\n\n\n\n\n\nModify your .Rmd/.qmd/.ipynb notes:\n\n\n\n\n\n\n\n6. Push your website to your GitHub repository\n\nRender the modified .Rmd/.qmd/.ipynb files:\n\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main\n\n\n\n7. Enable GibHub pages and update update repository details"
+    "text": "5. Modify it as you like\n\nModify the _quarto.yml file for your website:\n\n\n\n\n\n\n\nMake your .Rmd/.qmd/.ipynb notes:\n\n\n\n\n\n\n\nRender the new .Rmd/.qmd/.ipynb notes:\n\n\nquarto render analysis\n\n\nYou may check the html files in the ./docs folder to see if everything looks good.\nFor more information: Quarto Guide: Creating a Website.\n\n\n6. Upload the website to your GitHub repository\n\nAdd, commit, and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main\n\n\n\n7. Enable GibHub Pages and edit repository details\n\nGo to the “Settings” tab on your repository, go to “Pages” and in the “Branch” setting, select “main” and “/docs”, then click “Save”:\n\n\n\n\n\n\n\nOn your repository page, click the gear in the top right:\n\n\n\n\n\n\n\nEnter the website link for your convenience (the default link is &lt;user&gt;.github.io/&lt;repository&gt;), and click “Save changes”:"
+  },
+  {
+    "objectID": "misc.html#done",
+    "href": "misc.html#done",
+    "title": "Tutorial",
+    "section": "8. Done!",
+    "text": "8. Done!\n\nCongratulations, you have made a website!"
   },
   {
     "objectID": "part-2.html",
