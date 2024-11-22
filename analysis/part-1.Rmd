@@ -24,4 +24,4 @@ pcplink %>%
   theme_bw(base_size = 15)
 ```
 
-![](blob:https://github.com/ac93f223-12a5-4d14-a587-5f35a531d50b){fig-align="center" width="80%"}
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/part-3/5-1.png){fig-align="center" width="80%"}
