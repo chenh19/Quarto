@@ -1,5 +1,5 @@
 ---
-title: "HTML rendered from .Rmd"
+title: "Part-1: ```html``` rendered from ```.Rmd``` files"
 output: html_document
 ---
 
