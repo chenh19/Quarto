@@ -19,11 +19,11 @@ output: html_document
 
 - Enter the repository name, keep default initializing settings, then click "Create repository":  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png){fig-align="center" width="75%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3-1.png){fig-align="center" width="75%"}  
 
 - After creating the repository, you will see the following (copy the SSH link, you will need it in the next step):  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png){fig-align="center" width="75%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3-2.png){fig-align="center" width="75%"}  
 
 - For more information: [Creating a new GitHub repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
@@ -52,11 +52,11 @@ git remote add origin git@github.com:<user>/<repository.git>
 
 - Modify the ```.yml``` file for your website:  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png){fig-align="center" width="75%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5-1.png){fig-align="center" width="75%"}  
 
 - Modify your ```.Rmd/.qmd/.ipynb``` notes:
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png){fig-align="center" width="85%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5-2.png){fig-align="center" width="85%"}  
 
 
 ### 6. Push your website to your GitHub repository
@@ -76,8 +76,8 @@ git add --all && git commit -a -m "update" && git push -u origin main
 
 ### 7. Enable GibHub pages and update update repository details
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3.png){fig-align="center" width="80%"}
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-1.png){fig-align="center" width="80%"}
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/4.png){fig-align="center" width="80%"}
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-2.png){fig-align="center" width="80%"}
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5.png){fig-align="center" width="80%"}
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-3.png){fig-align="center" width="80%"}
