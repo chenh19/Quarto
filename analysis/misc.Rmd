@@ -19,11 +19,11 @@ output: html_document
 
 - Enter the repository name, keep default initializing settings, then click "Create repository":  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png){fig-align="center" width="70%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png){fig-align="center" width="75%"}  
 
 - After creating the repository, you will see the following:  
   
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png){fig-align="center" width="70%"}  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png){fig-align="center" width="75%"}  
 
 - For more information: [Creating a new GitHub repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
