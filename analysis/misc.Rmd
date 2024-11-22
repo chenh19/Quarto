@@ -19,6 +19,10 @@ output: html_document
 
 - [Creating a new GitHub repository from the web UI.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png)
+
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png)
+
 
 ### 4. Clone this Quarto template
 
@@ -42,7 +46,9 @@ git remote add origin git@github.com:<user>/<repository.git>
 
 ### 5. Modify it as you like
 
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png)
 
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png)
 
 
 ### 6. Push your website to your GitHub repository
@@ -61,3 +67,9 @@ git add --all && git commit -a -m "update" && git push -u origin main
 
 
 ### 7. Enable GibHub pages and update update repository details
+
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/3.png)
+
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/4.png)
+
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/5.png)
