@@ -88,7 +88,7 @@ git add --all && git commit -a -m "update" && git push -u origin main
   
 ![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-2.png){fig-align="center" width="80%"}  
   
-- Enter the website link for your convenience (the default link is ```<user>.github.io/<repository>```), and click "**Save changes**":  
+- Enter the website link for your convenience (the default link is ```https://<user>.github.io/<repository>/```), and click "**Save changes**":  
   
 ![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7-3.png){fig-align="center" width="80%"}  
 
