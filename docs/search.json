@@ -67,7 +67,21 @@
     "href": "misc.html#clone-the-quarto-template",
     "title": "Miscellaneous",
     "section": "Clone the Quarto template",
-    "text": "Clone the Quarto template\n\nIn a desired directory, clone the Quarto template repository:\n\n\ngit clone https://github.com/chenh19/Quarto.git\n\n\nRename the repository as you like:\n\n\nmv Quarto &lt;Project&gt; && cd &lt;Project&gt; && rm -rf .git %% git init\n\n\nConnect this local repository with your GitHub:\n\n\ngit remote add origin git@github.com:&lt;user&gt;/&lt;repository.git&gt;\n\n\nRender the modified .Rmd/.qmd/.ipynb files:\n\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
+    "text": "Clone the Quarto template\n\nIn a desired directory, clone the Quarto template repository:\n\n\ngit clone https://github.com/chenh19/Quarto.git\n\n\nRename the repository as you like:\n\n\nmv Quarto &lt;Project&gt; && cd &lt;Project&gt; && rm -rf .git && git init\n\n\nConnect this local repository with your GitHub:\n\n\ngit remote add origin git@github.com:&lt;user&gt;/&lt;repository.git&gt;\n\n\nRender the modified .Rmd/.qmd/.ipynb files:"
+  },
+  {
+    "objectID": "misc.html#push-your-website-to-your-github-repository",
+    "href": "misc.html#push-your-website-to-your-github-repository",
+    "title": "Miscellaneous",
+    "section": "Push your website to your GitHub repository",
+    "text": "Push your website to your GitHub repository\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main"
+  },
+  {
+    "objectID": "misc.html#enable-gibhub-pages-and-update-update-repository-details",
+    "href": "misc.html#enable-gibhub-pages-and-update-update-repository-details",
+    "title": "Miscellaneous",
+    "section": "Enable GibHub pages and update update repository details",
+    "text": "Enable GibHub pages and update update repository details"
   },
   {
     "objectID": "part-2.html",

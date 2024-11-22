@@ -43,7 +43,7 @@ git clone https://github.com/chenh19/Quarto.git
 - Rename the repository as you like:
 
 ```{bash, eval=FALSE}
-mv Quarto <Project> && cd <Project> && rm -rf .git %% git init
+mv Quarto <Project> && cd <Project> && rm -rf .git && git init
 ```
 
 - Connect this local repository with your GitHub:
@@ -53,6 +53,8 @@ git remote add origin git@github.com:<user>/<repository.git>
 ```
 
 - Render the modified ```.Rmd/.qmd/.ipynb``` files:
+
+## Push your website to your GitHub repository
 
 ```{bash, eval=FALSE}
 quarto render analysis
@@ -64,3 +66,4 @@ quarto render analysis
 git add --all && git commit -a -m "update" && git push -u origin main
 ```
 
+## Enable GibHub pages and update update repository details
