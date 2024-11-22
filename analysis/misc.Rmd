@@ -5,7 +5,7 @@ output: html_document
 
 ## 1. Setup workspace
 
-- If you happen to use [**Debian Linux (KDE)**](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), which is my wife's least hated linux distro, you may use "[**MyWorkspace**](https://github.com/chenh19/MyWorkspace)" to configure the entire workspace:
+- If you happen to use [**Debian Linux (KDE)**](https://cdimage.debian.org/debian-cd/current-live/amd64/iso-hybrid/), which is my wife's least hated linux distro, you may use "[**MyWorkspace**](https://github.com/chenh19/MyWorkspace)" to configure the entire workspace.
 
 - If you use other Unix/Linux systems, you may use "[**git_ssh**](https://github.com/chenh19/git_ssh)" to connect to GitHub with SSH, and "[**alt_rm**](https://github.com/chenh19/alt_rm)" to replace the default ```rm``` just in case.
 

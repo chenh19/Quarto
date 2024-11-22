@@ -39,14 +39,14 @@
     "href": "misc.html",
     "title": "Tutorial",
     "section": "",
-    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH, and “alt_rm” to replace the default rm just in case."
+    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace.\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH, and “alt_rm” to replace the default rm just in case."
   },
   {
     "objectID": "misc.html#setup-workspace",
     "href": "misc.html#setup-workspace",
     "title": "Tutorial",
     "section": "",
-    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace:\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH, and “alt_rm” to replace the default rm just in case."
+    "text": "If you happen to use Debian Linux (KDE), which is my wife’s least hated linux distro, you may use “MyWorkspace” to configure the entire workspace.\nIf you use other Unix/Linux systems, you may use “git_ssh” to connect to GitHub with SSH, and “alt_rm” to replace the default rm just in case."
   },
   {
     "objectID": "misc.html#install-quarto",
