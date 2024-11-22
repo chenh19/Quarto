@@ -60,7 +60,7 @@
     "href": "misc.html#create-a-new-github-repository",
     "title": "Miscellaneous",
     "section": "3. Create a new GitHub repository",
-    "text": "3. Create a new GitHub repository\n\nEnter the repository name, keep default initializing settings, then click “Create repository”:\n\n\n\n\n\n\n\nAfter creating the repository, you will see the following:\n\n\n\n\n\n\n\nFor more information: Creating a new GitHub repository from the web UI."
+    "text": "3. Create a new GitHub repository\n\nEnter the repository name, keep default initializing settings, then click “Create repository”:\n\n\n\n\n\n\n\nAfter creating the repository, you will see the following (copy the SSH link, you will need it in the next step):\n\n\n\n\n\n\n\nFor more information: Creating a new GitHub repository from the web UI."
   },
   {
     "objectID": "misc.html#clone-this-quarto-template",
@@ -74,7 +74,7 @@
     "href": "misc.html#modify-it-as-you-like",
     "title": "Miscellaneous",
     "section": "5. Modify it as you like",
-    "text": "5. Modify it as you like\n\n\n\n\n\n\n\n\n\n\n\n6. Push your website to your GitHub repository\n\nRender the modified .Rmd/.qmd/.ipynb files:\n\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main\n\n\n\n7. Enable GibHub pages and update update repository details"
+    "text": "5. Modify it as you like\n\nModify the .yml file for your website:\n\n\n\n\n\n\n\nModify your .Rmd/.qmd/.ipynb notes:\n\n\n\n\n\n\n\n6. Push your website to your GitHub repository\n\nRender the modified .Rmd/.qmd/.ipynb files:\n\n\nquarto render analysis\n\n\nCommit and push to your GitHub:\n\n\ngit add --all && git commit -a -m \"update\" && git push -u origin main\n\n\n\n7. Enable GibHub pages and update update repository details"
   },
   {
     "objectID": "part-2.html",

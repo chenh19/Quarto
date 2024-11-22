@@ -21,7 +21,7 @@ output: html_document
   
 ![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/1.png){fig-align="center" width="75%"}  
 
-- After creating the repository, you will see the following:  
+- After creating the repository, you will see the following (copy the SSH link, you will need it in the next step):  
   
 ![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/2.png){fig-align="center" width="75%"}  
 
@@ -50,9 +50,13 @@ git remote add origin git@github.com:<user>/<repository.git>
 
 ## 5. Modify it as you like
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png){fig-align="center" width="80%"}
+- Modify the ```.yml``` file for your website:  
+  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/6.png){fig-align="center" width="75%"}  
 
-![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png){fig-align="center" width="80%"}
+- Modify your ```.Rmd/.qmd/.ipynb``` notes:
+  
+![](https://raw.githubusercontent.com/chenh19/Quarto/refs/heads/main/images/misc/7.png){fig-align="center" width="85%"}  
 
 
 ### 6. Push your website to your GitHub repository
